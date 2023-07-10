@@ -1,0 +1,18 @@
+mainmodule monte_carlo
+{
+    mainchare Main
+    {
+        // Main's entry methods
+        entry Main(CkArgMsg *m);
+        entry void done();
+    };
+
+    array [1D] MC
+    {
+        // Hello's entry methods
+        entry Hello();
+        entry void SayHi();
+    };
+};
+	
+
