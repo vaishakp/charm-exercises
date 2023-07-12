@@ -1,17 +1,22 @@
-mainmodule monte_carlo
+mainmodule MonteCarlo
 {
     mainchare Main
     {
         // Main's entry methods
         entry Main(CkArgMsg *m);
-        entry void done();
+        entry [reductiontarget] void done(int total_counts);
     };
 
-    array [1D] MC
+    array [1D] MCCElement
     {
         // Hello's entry methods
-        entry Hello();
-        entry void SayHi();
+        entry MCCElement();
+        entry void MCIntegrate(int Npersubdomain, 
+                               float x_subdomain_min,
+                               float x_subdomain_max,
+                               float y_subdomain_min,
+                               float y_subdomain_max
+                               );
     };
 };
 	
