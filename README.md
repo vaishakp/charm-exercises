@@ -1,2 +1,2 @@
 # charm-exercises
-Charm++ exercises
+Basic Charm++ examples for beginners
